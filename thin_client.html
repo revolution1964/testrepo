@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Installing the OCI/Thick Driver for Oracle SQL Developer</title>
+</head>
+<body>
+  <h1>Installing the OCI/Thick Driver for Oracle SQL Developer</h1>
+  <ol>
+    <li>
+      <h2>Download Oracle Client Software</h2>
+      <p>Download the appropriate Oracle Client software from the Oracle website. Select the version that matches your Oracle Database version and your operating system. The "Instant Client" is a lightweight version that includes the basics for OCI, while the full Oracle Client includes additional tools and libraries.</p>
+    </li>
+    <li>
+      <h2>Install Oracle Client</h2>
+      <p>Install the Oracle Client software on your system. The process will depend on the version and your operating system, but generally involves unzipping the downloaded file and running an installer.</p>
+    </li>
+    <li>
+      <h2>Set the ORACLE_HOME Environment Variable</h2>
+      <p>The ORACLE_HOME environment variable should be set to the directory where you installed the Oracle Client.</p>
+    </li>
+    <li>
+      <h2>Configure SQL Developer to Use the OCI/Thick Driver</h2>
+      <ol>
+        <li>Open SQL Developer.</li>
+        <li>Go to Tools -> Preferences.</li>
+        <li>In the Preferences dialog, go to Database -> Advanced.</li>
+        <li>Under the "Use OCI/Thick driver" section, select the checkbox that says "Use OCI/Thick driver".</li>
+        <li>In the "OCI Library" field, enter the path to the oci.dll (on Windows) or libclntsh.so (on Linux or macOS) file in your Oracle Client installation directory. Typically, this file is in the "bin" subdirectory of the ORACLE_HOME directory.</li>
+        <li>Click "OK" to close the Preferences dialog.</li>
+      </ol>
+    </li>
+    <li>
+      <h2>Restart SQL Developer</h2>
+      <p>Changes will take effect after you restart SQL Developer.</p>
+    </li>
+  </ol>
+  <p>Remember to check Oracle's official documentation for the most accurate and up-to-date information.</p>
+</body>
+</html>
